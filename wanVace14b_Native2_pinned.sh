@@ -26,6 +26,14 @@ provisioning_start() {
   source /opt/ai-dock/etc/environment.sh || true
   source /opt/ai-dock/bin/venv-set.sh comfyui
 
+  # 🔒 Ajout des contraintes pip persistantes
+  echo 'PIP_CONSTRAINT=/workspace/pip-constraints.txt' | sudo tee -a /etc/environment >/dev/null
+  export PIP_CONSTRAINT=/workspace/pip-constraints.txt
+
+  # 🔒 Empêche les nodes / Manager de casser ton stack au boot
+  echo 'AUTO_UPDATE=false' | sudo tee -a /etc/environment >/dev/null
+  export AUTO_UPDATE=false
+
   # choose Comfy base dir that actually exists
   if [[ -d /opt/ComfyUI ]]; then
     export COMFY_BASE="/opt/ComfyUI"
