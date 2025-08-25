@@ -17,7 +17,6 @@ NODES=(
     "https://github.com/kijai/ComfyUI-KJNodes"
 	"https://github.com/Fannovel16/comfyui_controlnet_aux.git"
  "https://github.com/kijai/ComfyUI-WanVideoWrapper.git"
- "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git"
  "https://github.com/yvann-ba/ComfyUI_Yvann-Nodes.git"
  "https://github.com/AIWarper/ComfyUI-NormalCrafterWrapper.git"
  "https://github.com/ltdrdata/ComfyUI-Impact-Pack.git"
