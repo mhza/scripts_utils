@@ -48,6 +48,7 @@ function provisioning_start() {
 	wget -O wan_2.1_vae.safetensors	https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors?download=true
 	cd ../diffusion_models/
 	wget -O Wan2.1_14B_VACE-Q5_K_S.gguf https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q5_K_S.gguf?download=true
+	wget -O Wan2.1_14B_VACE-Q8_0.gguf https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q8_0.gguf?download=true
 
 
 cd ../loras/
