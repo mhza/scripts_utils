@@ -6,10 +6,11 @@ APT_PACKAGES=(
 )
 
 PIP_PACKAGES=(
-    "torch==2.3.1"
-    "torchvision==0.18.1"
-    "xformers==0.0.27.post2"
-    "triton<3"
+  "torch==2.3.1"
+  "torchvision==0.18.1"
+  "torchaudio==2.3.1"
+  "triton==2.3.1"
+  "xformers==0.0.27.post2"
 )
 
 NODES=(
